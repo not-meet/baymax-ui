@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Itim } from "next/font/google";
 import "./globals.css";
+import { Ripple } from "@/components/ui/ripple";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const itim = Itim({
+  subsets: ['latin'],
+  weight: '400'
 });
 
 const geistMono = Geist_Mono({
@@ -25,9 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${itim.className} antialiased bg-[#fffcf2] overflow-hidden`}
       >
         {children}
+        <Ripple mainCircleSize={1000} mainCircleOpacity={0.10} numCircles={10} className="z-0" />
       </body>
     </html>
   );
