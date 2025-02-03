@@ -16,7 +16,7 @@ export function PageNavigationHandler() {
 
   const fetchPage = async () => {
     try {
-      const response = await axios.get('/api/page-tracking');
+      const response = await axios.get('https://baymax-ui.vercel.app/api/page-tracking');
       const newPageNumber = response.data.page;
       console.log(newPageNumber)
       if (newPageNumber !== currentPage) {
