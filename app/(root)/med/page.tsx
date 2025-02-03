@@ -10,7 +10,7 @@ export default function YourPage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowCategories(true);
-    }, 2000); // 5 seconds delay
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
