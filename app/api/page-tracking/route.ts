@@ -1,43 +1,49 @@
-// app/api/page/route.ts
+import { Redis } from '@upstash/redis'
 import { NextRequest, NextResponse } from 'next/server'
-export function createPageTracker() {
-  let lastPage = 1;
 
-  return {
-    async POST(request: NextRequest) {
-      try {
-        const { page } = await request.json()
-        const pageNumber = Number(page)
+const redis = new Redis({
+  url: process.env.REDIS_REST_URL!,
+  token: process.env.REDIS_REST_TOKEN!,
+})
 
-        if (isNaN(pageNumber) || pageNumber < 1 || !Number.isInteger(pageNumber)) {
-          return NextResponse.json(
-            { error: 'Invalid page number' },
-            { status: 400 }
-          )
-        }
+export async function POST(request: NextRequest) {
+  try {
+    const { page } = await request.json()
+    const pageNumber = Number(page)
 
-        lastPage = pageNumber
-
-        return NextResponse.json({
-          success: true,
-          page: lastPage
-        })
-      } catch (error) {
-        return NextResponse.json(
-          { error: 'Failed to process request' },
-          { status: 500 }
-        )
-      }
-    },
-
-    GET() {
-      return NextResponse.json({
-        page: lastPage
-      })
+    if (isNaN(pageNumber) || pageNumber < 1 || !Number.isInteger(pageNumber)) {
+      return NextResponse.json(
+        { error: 'Invalid page number' },
+        { status: 400 }
+      )
     }
+
+    // Store in Redis
+    await redis.set('lastPage', pageNumber)
+
+    return NextResponse.json({
+      success: true,
+      page: pageNumber
+    })
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Failed to process request' },
+      { status: 500 }
+    )
   }
 }
 
-const pageTracker = createPageTracker()
-export const POST = pageTracker.POST
-export const GET = pageTracker.GET
+export async function GET() {
+  try {
+    // Retrieve from Redis, default to 1 if not found
+    const lastPage = await redis.get('lastPage') || 1
+
+    return NextResponse.json({
+      page: Number(lastPage)
+    })
+  } catch (error) {
+    return NextResponse.json(
+      { page: 1 }
+    )
+  }
+}
