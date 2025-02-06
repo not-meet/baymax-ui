@@ -3,7 +3,6 @@ import { Pill, Leaf, Droplets, LucideIcon } from 'lucide-react';
 export interface Medicine {
   name: string;
   description: string;
-  usage: string;
 }
 
 export interface MedicalItem {
@@ -17,73 +16,60 @@ export const allopathicMedicines: Medicine[] = [
   {
     name: "Propranolol",
     description: "Beta-blocker for heart-related conditions",
-    usage: "Used to treat high blood pressure, anxiety, and migraine prevention"
   },
   {
     name: "Sumatriptan",
     description: "Migraine and cluster headache reliever",
-    usage: "Helps narrow blood vessels to reduce migraine and headache symptoms"
   },
   {
     name: "Zolmitriptan",
     description: "Fast-acting migraine medication",
-    usage: "Used for acute migraine attacks, reducing headache severity and associated symptoms"
-  },
+  }
 ];
 
 export const ayurvedicMedicines: Medicine[] = [
   {
-    name: "Ashwagandha",
-    description: "Adaptogenic herb known as Indian Ginseng",
-    usage: "Helps reduce stress and anxiety, improves sleep quality"
+    name: "Godanti Bhasma",
+    description: " A mineral-based formulation used to relieve chronic migraines and severe headaches.",
   },
   {
-    name: "Turmeric",
-    description: "Anti-inflammatory herb with curcumin",
-    usage: "Supports joint health, immunity, and reduces inflammation"
+    name: "Chandrakala Rasa",
+    description: "Helps with headaches caused by excessive heat and acidity.",
   },
   {
-    name: "Triphala",
-    description: "Herbal blend of three fruits",
-    usage: "Aids digestion, detoxification, and gut health"
+    name: 'Kamadugha Rasa (Mouktika Yukta)',
+    description: "Balances Pitta dosha and soothes headaches due to stress and inflammation.",
   },
   {
     name: "Brahmi",
     description: "Traditional cognitive enhancer",
-    usage: "Improves memory, focus, and mental clarity"
   },
   {
     name: "Shatavari",
     description: "Adaptogenic herb for vitality",
-    usage: "Supports hormonal balance and immune system"
   }
 ];
 
 export const homeopathicMedicines: Medicine[] = [
   {
-    name: "Arnica Montana",
-    description: "Natural pain reliever derived from mountain daisy",
-    usage: "Treats muscle soreness, bruising, and post-injury recovery"
+    name: 'Kali Phos',
+    description: "Used for stress-induced headaches, mental fatigue, and nervous exhaustion.",
   },
   {
-    name: "Oscillococcinum",
-    description: "Popular flu remedy",
-    usage: "Reduces flu-like symptoms and fever"
+    name: 'Cimicifuga Racemosa',
+    description: "Helps with tension headaches, especially in the neck and shoulders.",
   },
   {
-    name: "Nux Vomica",
-    description: "Digestive aid from strychnos nux-vomica seeds",
-    usage: "Helps with digestive issues, nausea, and hangover symptoms"
+    name: "Gelsemium Sempervirens",
+    description: "Effective for dull headaches accompanied by dizziness and heaviness in the head."
   },
   {
-    name: "Belladonna",
-    description: "Remedy for sudden onset conditions",
-    usage: "Treats fever, inflammation, and headaches"
+    name: "Euphrasia",
+    description: "Best for colds with watery eyes, nasal discharge, and irritation.",
   },
   {
-    name: "Rhus Toxicodendron",
-    description: "Remedy derived from poison ivy",
-    usage: "Helps with joint stiffness and sprains"
+    name: "Pulsatilla",
+    description: "Effective for colds with thick, yellow mucus, usually in children.",
   }
 ];
 

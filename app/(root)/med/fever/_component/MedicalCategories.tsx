@@ -13,7 +13,6 @@ import {
 interface Medicine {
   name: string;
   description: string;
-  usage: string;
 }
 
 interface MedicalItem {
@@ -32,17 +31,14 @@ const medicalCategories: MedicalItem[] = [
       {
         name: "Nefopam",
         description: "Non-opioid pain reliever",
-        usage: "Used for moderate to severe pain without causing drowsiness"
       },
       {
         name: "Ibuprofen",
         description: "Non-steroidal anti-inflammatory drug (NSAID)",
-        usage: "Helps reduce pain, inflammation, and fever in conditions like arthritis and muscle pain"
       },
       {
         name: "Indomethacin",
         description: "Potent anti-inflammatory medication",
-        usage: "Used for arthritis, gout, and other inflammatory conditions to relieve swelling and pain"
       }
     ]
   },
@@ -52,29 +48,24 @@ const medicalCategories: MedicalItem[] = [
     IconComponent: Leaf,
     medicines: [
       {
-        name: "Ashwagandha",
-        description: "Adaptogenic herb known as Indian Ginseng",
-        usage: "Helps reduce stress and anxiety, improves sleep quality"
+        name: "Mahasudharshan Churna",
+        description: "A powerful Ayurvedic blend for fever, detoxification, and immune support.",
       },
       {
-        name: "Turmeric",
-        description: "Anti-inflammatory herb with curcumin",
-        usage: "Supports joint health, immunity, and reduces inflammation"
+        name: "Mahasudharshan Ghan Vati",
+        description: "Herbal tablets used to manage viral fevers and infections.",
       },
       {
-        name: "Triphala",
-        description: "Herbal blend of three fruits",
-        usage: "Aids digestion, detoxification, and gut health"
+        name: "Godanti Bhasma",
+        description: "Used to reduce high fever, migraines, and body aches",
       },
       {
-        name: "Brahmi",
-        description: "Traditional cognitive enhancer",
-        usage: "Improves memory, focus, and mental clarity"
+        name: "Tribhuvan Kirti Rasa",
+        description: "An Ayurvedic formula that helps with fever due to cold and flu",
       },
       {
-        name: "Shatavari",
-        description: "Adaptogenic herb for vitality",
-        usage: "Supports hormonal balance and immune system"
+        name: "Mahajwarankush Rasa",
+        description: "Used for treating chronic fever and immune system imbalance.",
       }
     ]
   },
@@ -84,29 +75,24 @@ const medicalCategories: MedicalItem[] = [
     IconComponent: Droplets,
     medicines: [
       {
-        name: "Arnica Montana",
-        description: "Natural pain reliever derived from mountain daisy",
-        usage: "Treats muscle soreness, bruising, and post-injury recovery"
+        name: "Aconite",
+        description: "Used for fever with sudden onset, restlessness, and thirst for cold water, especially after cold wind exposure.",
       },
       {
-        name: "Oscillococcinum",
-        description: "Popular flu remedy",
-        usage: "Reduces flu-like symptoms and fever"
+        name: "Bryonia Alba",
+        description: "Helps with fever accompanied by body aches, dry mouth, and excessive thirst.",
       },
       {
-        name: "Nux Vomica",
-        description: "Digestive aid from strychnos nux-vomica seeds",
-        usage: "Helps with digestive issues, nausea, and hangover symptoms"
+        name: "Arsenicum Album",
+        description: " Effective for fevers with weakness, burning pain, and anxiety, often linked to respiratory infections.",
       },
       {
-        name: "Belladonna",
-        description: "Remedy for sudden onset conditions",
-        usage: "Treats fever, inflammation, and headaches"
+        name: "Euphrasia",
+        description: "Treats fever with eye irritation, watery discharge, and cold symptoms",
       },
       {
-        name: "Rhus Toxicodendron",
-        description: "Remedy derived from poison ivy",
-        usage: "Helps with joint stiffness and sprains"
+        name: "Natrum Muriaticum",
+        description: "Helps with fevers that cause chills, dehydration, and excessive dryness",
       }
     ]
   }
@@ -119,7 +105,6 @@ const MedicineList = ({ medicines }: { medicines: Medicine[] }) => {
         <div key={index} className="p-8 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors text-xl">
           <h3 className="font-semibold text-2xl text-gray-900">{medicine.name}</h3>
           <p className="text-lg text-gray-600 mt-3">{medicine.description}</p>
-          <p className="text-lg text-gray-500 mt-3">Usage: {medicine.usage}</p>
         </div>
       ))}
     </div>

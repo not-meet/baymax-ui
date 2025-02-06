@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${itim.className} antialiased bg-[#fffcf2] overflow-hidden`}
       >
-        <PageNavigationHandler />
+        {/* <PageNavigationHandler /> */}
         {children}
         <Ripple mainCircleSize={1000} mainCircleOpacity={0.6} numCircles={10} className="z-[-10]" />
       </body>

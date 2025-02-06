@@ -17,7 +17,6 @@ const MedicineList = ({ medicines }: { medicines: Medicine[] }) => {
         <div key={index} className="p-8 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors text-xl">
           <h3 className="font-semibold text-2xl text-gray-900">{medicine.name}</h3>
           <p className="text-lg text-gray-600 mt-3">{medicine.description}</p>
-          <p className="text-lg text-gray-500 mt-3">Usage: {medicine.usage}</p>
         </div>
       ))}
     </div>

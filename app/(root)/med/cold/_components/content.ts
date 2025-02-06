@@ -3,7 +3,6 @@ import { Pill, Leaf, Droplets, LucideIcon } from 'lucide-react';
 export interface Medicine {
   name: string;
   description: string;
-  usage: string;
 }
 
 export interface MedicalItem {
@@ -17,22 +16,18 @@ export const allopathicMedicines: Medicine[] = [
   {
     name: "Azelastine",
     description: "Fast-acting antihistamine",
-    usage: "Used for nasal allergies and hay fever relief"
   },
   {
     name: "Diphenhydramine",
     description: "Sedating antihistamine",
-    usage: "Helps with allergies, insomnia, and motion sickness"
   },
   {
     name: "Loratadine",
     description: "Non-drowsy allergy medication",
-    usage: "Provides relief from sneezing, runny nose, and itchy eyes"
   },
   {
     name: "Ibuprofen",
     description: "Pain reliever and anti-inflammatory drug",
-    usage: "Eases pain, swelling, and reduces fever"
   }
 ];
 
@@ -40,57 +35,48 @@ export const ayurvedicMedicines: Medicine[] = [
   {
     name: "Ashwagandha",
     description: "Adaptogenic herb known as Indian Ginseng",
-    usage: "Helps reduce stress and anxiety, improves sleep quality"
   },
   {
-    name: "Turmeric",
-    description: "Anti-inflammatory herb with curcumin",
-    usage: "Supports joint health, immunity, and reduces inflammation"
+    name: "Guduchi Tablet",
+    description: "Helps fight cold, infections, and boosts immunity.",
   },
   {
-    name: "Triphala",
-    description: "Herbal blend of three fruits",
-    usage: "Aids digestion, detoxification, and gut health"
+    name: "Jatiphaladi Churna",
+    description: "Soothes respiratory discomfort and balances excess Kapha, relieving cold symptoms.",
   },
   {
     name: "Brahmi",
     description: "Traditional cognitive enhancer",
-    usage: "Improves memory, focus, and mental clarity"
   },
   {
     name: "Shatavari",
     description: "Adaptogenic herb for vitality",
-    usage: "Supports hormonal balance and immune system"
   }
 ];
 
 export const homeopathicMedicines: Medicine[] = [
   {
-    name: "Arnica Montana",
-    description: "Natural pain reliever derived from mountain daisy",
-    usage: "Treats muscle soreness, bruising, and post-injury recovery"
+    name: 'Aconitum Napellus',
+    description: "Used for colds with sudden onset, fever, and dry cough.",
   },
   {
-    name: "Oscillococcinum",
-    description: "Popular flu remedy",
-    usage: "Reduces flu-like symptoms and fever"
-  },
-  {
-    name: "Nux Vomica",
-    description: "Digestive aid from strychnos nux-vomica seeds",
-    usage: "Helps with digestive issues, nausea, and hangover symptoms"
+    name: 'Arsenicum Album',
+    description: "Helps with frequent colds, sore throats, and burning nasal discharge",
   },
   {
     name: "Belladonna",
-    description: "Remedy for sudden onset conditions",
-    usage: "Treats fever, inflammation, and headaches"
+    description: "Effective for colds with fever, flushed face, and a throbbing headache.",
   },
   {
-    name: "Rhus Toxicodendron",
-    description: "Remedy derived from poison ivy",
-    usage: "Helps with joint stiffness and sprains"
+    name: "Euphrasia",
+    description: "Best for colds with watery eyes, nasal discharge, and irritation.",
+  },
+  {
+    name: "Pulsatilla",
+    description: "Effective for colds with thick, yellow mucus, usually in children.",
   }
 ];
+
 
 export const medicalCategories: MedicalItem[] = [
   {
