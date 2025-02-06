@@ -21,7 +21,7 @@ const Activate = () => {
           duration={80}
           className="text-8xl text-gray-800 font-bold"
         >
-          "Hi Baymax"
+          "Hi Max"
         </TypingAnimation>
         to wake me up!!
       </h1>

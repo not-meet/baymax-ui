@@ -1,9 +1,10 @@
 "use client"
 import { useState } from "react";
 import { PulsatingButton } from "@/components/ui/pulsating-button";
-import { MedicalBoxCold } from "../_components/MedicalBoxcold";
-import { MedicalCategoriesList } from '../_components/MedicalCategoriesList'
 import { motion, AnimatePresence } from "framer-motion";
+import MedicalCategoriesList from "./_component/MedicalCategories";
+import MedicineBoxHeadache from "./_component/MedicalBoxReveal";
+
 
 export default function Cold() {
   const [showCategories, setShowCategories] = useState(false);
@@ -19,7 +20,7 @@ export default function Cold() {
             transition={{ duration: 0.3 }}
             className="w-full h-full"
           >
-            <MedicalBoxCold />
+            <MedicineBoxHeadache />
             <div className="absolute top-8 right-8">
               <PulsatingButton
                 onClick={() => setShowCategories(true)}

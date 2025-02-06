@@ -13,32 +13,23 @@ export interface MedicalItem {
   medicines: Medicine[];
 }
 
+
 export const allopathicMedicines: Medicine[] = [
   {
-    name: "Paracetamol",
-    description: "Common pain reliever and fever reducer",
-    usage: "Used for headaches, body aches, and fever"
-  },
-  {
-    name: "Amoxicillin",
-    description: "Broad-spectrum antibiotic",
-    usage: "Treats various bacterial infections"
-  },
-  {
-    name: "Omeprazole",
-    description: "Proton pump inhibitor",
-    usage: "Reduces stomach acid production"
+    name: "Nefopam",
+    description: "Non-opioid pain reliever",
+    usage: "Used for moderate to severe pain without causing drowsiness"
   },
   {
     name: "Ibuprofen",
     description: "Non-steroidal anti-inflammatory drug (NSAID)",
-    usage: "Reduces pain, fever, and inflammation"
+    usage: "Helps reduce pain, inflammation, and fever in conditions like arthritis and muscle pain"
   },
   {
-    name: "Cetirizine",
-    description: "Antihistamine medication",
-    usage: "Treats allergies and hay fever symptoms"
-  }
+    name: "Indomethacin",
+    description: "Potent anti-inflammatory medication",
+    usage: "Used for arthritis, gout, and other inflammatory conditions to relieve swelling and pain"
+  },
 ];
 
 export const ayurvedicMedicines: Medicine[] = [

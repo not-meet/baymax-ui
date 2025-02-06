@@ -15,29 +15,24 @@ export interface MedicalItem {
 
 export const allopathicMedicines: Medicine[] = [
   {
-    name: "Paracetamol",
-    description: "Common pain reliever and fever reducer",
-    usage: "Used for headaches, body aches, and fever"
+    name: "Azelastine",
+    description: "Fast-acting antihistamine",
+    usage: "Used for nasal allergies and hay fever relief"
   },
   {
-    name: "Amoxicillin",
-    description: "Broad-spectrum antibiotic",
-    usage: "Treats various bacterial infections"
+    name: "Diphenhydramine",
+    description: "Sedating antihistamine",
+    usage: "Helps with allergies, insomnia, and motion sickness"
   },
   {
-    name: "Omeprazole",
-    description: "Proton pump inhibitor",
-    usage: "Reduces stomach acid production"
+    name: "Loratadine",
+    description: "Non-drowsy allergy medication",
+    usage: "Provides relief from sneezing, runny nose, and itchy eyes"
   },
   {
     name: "Ibuprofen",
-    description: "Non-steroidal anti-inflammatory drug (NSAID)",
-    usage: "Reduces pain, fever, and inflammation"
-  },
-  {
-    name: "Cetirizine",
-    description: "Antihistamine medication",
-    usage: "Treats allergies and hay fever symptoms"
+    description: "Pain reliever and anti-inflammatory drug",
+    usage: "Eases pain, swelling, and reduces fever"
   }
 ];
 

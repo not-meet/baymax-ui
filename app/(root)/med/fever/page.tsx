@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react";
 import { PulsatingButton } from "@/components/ui/pulsating-button";
-import { MedicalBoxCold } from "../_components/MedicalBoxcold";
-import { MedicalCategoriesList } from '../_components/MedicalCategoriesList'
 import { motion, AnimatePresence } from "framer-motion";
+import MedicineBoxFever from "./_component/MedicalBoxReveal";
+import MedicalCategoriesList from "./_component/MedicalCategories";
 
 export default function Cold() {
   const [showCategories, setShowCategories] = useState(false);
@@ -19,11 +19,11 @@ export default function Cold() {
             transition={{ duration: 0.3 }}
             className="w-full h-full"
           >
-            <MedicalBoxCold />
+            <MedicineBoxFever />
             <div className="absolute top-8 right-8">
               <PulsatingButton
                 onClick={() => setShowCategories(true)}
-                className="bg-[#ffcccc] hover:bg-opacity-90 text-black px-6 py-3 rounded-lg text-lg font-medium transition-colors duration-200"
+                className="bg-[#ffcccc] hover:bg-opacity-90 text-black px-6 py-4 rounded-lg text-xl font-medium transition-colors duration-200"
                 pulseColor="#ff9999"
               >
                 See some more suggestions

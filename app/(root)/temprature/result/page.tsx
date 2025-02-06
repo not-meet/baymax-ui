@@ -1,8 +1,10 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const Temperature = () => {
+  const router = useRouter()
   const [temperature, setTemperature] = useState<number | null>(null);
 
   useEffect(() => {
@@ -13,6 +15,7 @@ const Temperature = () => {
         setTemperature(tempValue);
       } catch (error) {
         console.error('Error fetching temperature:', error);
+        router.push('/error')
       }
     };
 

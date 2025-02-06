@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <PageNavigationHandler />
         {children}
-        <Ripple mainCircleSize={1000} mainCircleOpacity={0.40} numCircles={10} className="z-[-10]" />
+        <Ripple mainCircleSize={1000} mainCircleOpacity={0.6} numCircles={10} className="z-[-10]" />
       </body>
     </html>
   );
