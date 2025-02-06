@@ -12,7 +12,7 @@ const Home = () => {
         alt='baymax'
         className="z-10"
       />
-      <h1 className="text-8xl text-gray-900 font-bold mb-2">Welcome to Baymax</h1>
+      <h1 className="text-8xl text-gray-900 font-bold mb-2">Hi I am Baymax</h1>
       <TypingAnimation
         duration={80}
         className='text-xl text-slate-700 ml-0.5'

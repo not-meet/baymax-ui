@@ -1,11 +1,13 @@
 "use client"
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { PulsatingButton } from "@/components/ui/pulsating-button";
 import { MedicalBoxCold } from "../_components/MedicalBoxcold";
 import { MedicalCategoriesList } from '../_components/MedicalCategoriesList'
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Cold() {
+  const router = useRouter();
   const [showCategories, setShowCategories] = useState(false);
 
   return (

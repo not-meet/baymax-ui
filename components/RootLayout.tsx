@@ -5,9 +5,20 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 
 const PAGE_ROUTES = {
+  100: '/activate',
   1: '/',
-  2: '/qr',
-  3: '/page-three',
+  2: '/listing',
+  3: '/temprature/direct',
+  4: '/temprature/result',
+  5: '/med/cold',
+  6: '/med/fever',
+  7: '/med/headace',
+  8: '/spray',
+  9: '/qr',
+  10: '/reports',
+  11: '/error',
+  12: '/thankyou'
+
 };
 
 export function PageNavigationHandler() {

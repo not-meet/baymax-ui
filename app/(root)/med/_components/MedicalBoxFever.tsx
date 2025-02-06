@@ -1,6 +1,6 @@
 import { BoxReveal } from "@/components/ui/box-reveal";
 
-export function MedicineBoxReveal() {
+export function MedicalBoxFever() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-8">
       <div className="max-w-6xl w-full">
@@ -35,4 +35,4 @@ export function MedicineBoxReveal() {
   );
 }
 
-export default MedicineBoxReveal;
+export default MedicalBoxFever();
