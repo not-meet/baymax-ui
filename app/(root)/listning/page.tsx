@@ -15,7 +15,7 @@ const Listning = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className='text-8xl text-black font-bold flex flex-wrap justify-center items-center gap-x-4'>Listning
+      <h1 className='text-8xl text-black font-bold flex flex-wrap justify-center items-center gap-x-4'>Listening
         <TypingAnimation
           key={key}
           duration={80}
