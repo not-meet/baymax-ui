@@ -18,7 +18,7 @@ const QRScan = () => {
       />
 
       <Image
-        src='/baymax.png'
+        src='/newqr.png'
         height={100}
         width={100}
         alt='baymax'
