@@ -10,7 +10,7 @@ const QRScan = () => {
       </h1>
 
       <Image
-        src='/scanner.svg'
+        src='/newqr.png'
         width={400}
         height={400}
         alt='QR Code Scanner'
