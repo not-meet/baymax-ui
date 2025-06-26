@@ -10,19 +10,11 @@ const QRScan = () => {
       </h1>
 
       <Image
-        src='/newqr.png'
+        src='/baymax-qr.png'
         width={400}
         height={400}
         alt='QR Code Scanner'
         className="mb-8"
-      />
-
-      <Image
-        src='/newqr.png'
-        height={100}
-        width={100}
-        alt='baymax'
-        className="absolute bottom-10 right-10 z-30"
       />
     </div>
   )
