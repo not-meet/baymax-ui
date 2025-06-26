@@ -32,7 +32,6 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-
 export async function GET() {
   try {
     // Retrieve from Redis, default to 1 if not found
