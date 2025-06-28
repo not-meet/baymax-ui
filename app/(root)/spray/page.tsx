@@ -27,11 +27,11 @@ const Listning = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-8">
       <h1 className='text-6xl text-black font-bold text-center'>
-        Please put the bruise mark 10 cm away from the rectangle in my palm
+        Please put the bruise mark 5cm away from my palm
       </h1>
       {countdown !== 0 &&
         <h2 className='text-4xl text-gray-700 font-semibold'>
-          I'll start spraying in: {countdown}s
+          press the button to spray the spray :)
         </h2>
       }
       {countdown === 0 && (
